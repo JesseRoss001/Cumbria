@@ -1,0 +1,469 @@
+/* style.css */
+
+/* =========================================
+   ROOT VARIABLES
+========================================== */
+:root {
+  /* Core Brand Colors */
+  --primary-color: #09096A;      /* Deep Navy */
+  --accent-color: #FF28A8;       /* Bright Magenta */
+  --text-dark: #373B3E;          /* Dark gray for body text */
+
+  /* Backgrounds and Cards */
+  --hero-bg-color: #F9F9F9;      /* Very light gray background */
+  --card-bg-color: #FFFFFF;      /* White card */
+  --light-bg: #FAFAFA;           /* Very light gray for sections */
+  --bg-purple: #F2E8FF;          /* Light purple for Core Values */
+  --bg-pink: #FFE8F1;            /* Light pink for Core Values */
+  --bg-green: #E8FFF2;           /* Light mint green for Core Values */
+  --bg-yellow: #FFF8E8;          /* Light yellow for Core Values */
+
+  /* Highlight */
+  --highlight-bg: #FF28A8;       /* Magenta highlight */
+  --highlight-text: #FFFFFF;     /* White on magenta highlight */
+
+  /* Shadows */
+  --shadow-color-navy: rgba(9, 9, 106, 0.15);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* CTA Button */
+  --btn-bg-color: #09096A;
+  --btn-hover: #FF28A8;
+  --white: #FFFFFF;
+}
+
+/* ————— Navbar Gradient + Colors ————— */
+.navbar-custom {
+  background: #fff;
+  z-index: 1020;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #06171f;
+  font-weight: 500;
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: var(--accent-color);
+}
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ————— “Book Your Free Trial” pill ————— */
+.btn-trial {
+  display: inline-flex !important;
+  width: auto !important;
+  border-radius: 50px;
+}
+@media (max-width: 767.98px) {
+  .btn-trial {
+    margin: 1rem auto;
+    display: inline-flex;
+    width: auto;
+  }
+}
+
+/* ————— “View All Mentors” pill (if still used) ————— */
+.btn-mentor {
+  border-width: 2px;
+  border-color: #06171f;
+  color: #06171f;
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-mentor i {
+  font-size: 1rem;
+}
+.btn-mentor:hover,
+.btn-mentor:focus {
+  background-color: #06171f;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ensure the dropdown caret/icon also matches */
+.dropdown-toggle::after {
+  filter: invert(0.6);
+}
+
+/* ————— Collapsed‐menu flex only when open ————— */
+@media (max-width: 991.98px) {
+  .navbar-custom .navbar-collapse.collapse {
+    display: none;
+  }
+  .navbar-custom .navbar-collapse.collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-custom .btn-trial {
+    margin: 1rem 0 0;
+  }
+}
+@media (max-width: 991.98px) {
+  /* Remove any invert filter you had */
+  .navbar-custom .navbar-toggler-icon {
+    filter: none; 
+    /* Inject a black‐stroked SVG instead of the default grey/white */
+    color: #06171f;
+  }
+}
+
+/* ===================================================================
+   TESTIMONIALS SECTION
+   =================================================================== */
+
+/* Section wrapper */
+#testimonials {
+  background-color: var(--light-bg);
+  padding: 1rem 0;             /* tighten top/bottom space */
+}
+
+/* Remove any bottom margin from the inner container */
+#testimonials .container {
+  margin-bottom: 0;
+}
+
+/* Section label (“Testimonials”) */
+.section-label {
+  display: inline-block;
+  background-color: var(--bg-purple);
+  color: var(--accent-color);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;       /* slightly tighter under the label */
+}
+
+/* Section title (“What They Say”) */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.2;
+  padding-bottom: 0.5rem;      /* slimmed down */
+  margin: 0 auto 0;            /* remove default margins */
+}
+
+/* Clear bottom margin on any row/grid wrapper */
+#testimonials .row,
+#testimonialCarousel .carousel-inner {
+  margin-bottom: 0;
+}
+
+/* Individual testimonial card */
+.testimonial-card {
+  background-color: var(--bg-purple);
+  border-radius: 1rem;
+  padding: 1.5rem;             /* reduced from 2rem */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 25px rgba(9, 9, 106, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(9, 9, 106, 0.15);
+}
+
+/* Quote text */
+.quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Author line */
+.author {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+/* Star icons */
+.star-rating i {
+  color: #FFCC00;
+  font-size: 1rem;
+}
+
+/* flex-wrap grid only on md (768–991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #testimonialCarousel .carousel-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  #testimonialCarousel .carousel-item {
+    flex: 1 1 calc(50% - 1rem);
+    display: block !important;
+    margin: 0;
+  }
+  #testimonialCarousel .carousel-control-prev,
+  #testimonialCarousel .carousel-control-next {
+    display: none;
+  }
+  #testimonialCarousel .testimonial-card {
+    margin: 0 auto;
+  }
+}
+
+/* equal-height 2×2 grid only on lg (≥992px) */
+@media (min-width: 992px) {
+  #testimonialCarousel .carousel-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  #testimonialCarousel .carousel-item {
+    display: flex !important;
+  }
+  #testimonialCarousel .testimonial-card {
+    flex: 1 1 auto;
+  }
+}
+
+
+/* ————— CTA SECTION ————— */
+.cta-section {
+  padding-top: 1rem !important;
+}
+.cta-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 4rem 2rem;
+  background: url('images/cta-bg.svg') center/cover no-repeat;
+  box-shadow: 0 8px 25px rgba(9, 9, 106, 0.1);
+  text-align: center;
+}
+.cta-card h2 {
+  color: #06171f;
+  font-size: 2rem;
+  margin: 0 auto 1rem;
+  max-width: 800px;
+}
+.cta-card p {
+  color: #47515e;
+  font-size: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+}
+
+/* form elements */
+.cta-card .form-control-lg {
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
+  width: 100%;
+}
+.btn-cta {
+  background-color: var(--btn-bg-color);
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: #FAFAFA;
+  border: none;
+  min-width: 200px;
+}
+.btn-cta:hover,
+.btn-cta:focus {
+  background-color: var(--btn-hover);
+  color: #fff;
+  text-decoration: none;
+}
+.btn-cta i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+/* ——— md and below ——— */
+@media (max-width: 991.98px) {
+  .cta-card {
+    padding: 3rem 1.5rem;
+  }
+  .cta-card h2 {
+    font-size: 1.75rem;
+  }
+  .cta-card p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  /* stack form vertically */
+  .cta-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .cta-card form .col-sm-6,
+  .cta-card form .col-auto {
+    width: 100%;
+    max-width: 400px;
+  }
+  .cta-card form .col-auto {
+    text-align: center;
+  }
+  .btn-cta {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* ——— sm and xs ——— */
+@media (max-width: 576px) {
+  .cta-card {
+    padding: 2rem 1rem;
+  }
+  .cta-card h2 {
+    font-size: 1.5rem;
+  }
+  .cta-card p {
+    font-size: 0.9rem;
+  }
+  .btn-cta {
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* ————— Footer Section ————— */
+.footer-section {
+  position: relative;
+  padding: 4rem 0 2rem;
+  background: url('images/footer-bg.svg') center/cover no-repeat;
+}
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+}
+.footer-logo .h5 {
+  margin-left: 0.5rem;
+}
+.social-icons a {
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+  transition: color .2s;
+  color: #FF28A8;
+}
+.social-icons a:hover {
+  color: #09096A;
+}
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #FF28A8;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+.footer-links a {
+  color: #06171f;
+  text-decoration: none;
+  transition: color .2s;
+}
+.footer-links a:hover {
+  color: #FF28A8;
+}
+.footer-section .bi {
+  vertical-align: -.125em;
+  margin-right: 0.5rem;
+  color: #FF28A8;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+.footer-bottom small {
+  color: #06171f;
+}
+.footer-bottom .design-credit {
+  margin: .5rem 0 0;
+  font-size: .875rem;
+}
+.footer-bottom .design-credit a {
+  color: #FF28A8;
+  text-decoration: underline;
+  transition: color .2s;
+}
+.footer-bottom .design-credit a:hover {
+  color: #09096A;
+}
+
+/* ---------- FAQ section ---------- */
+#faq { background: #fff; }
+
+.faq-title        { color:#390332; }          /* deep green */
+.faq-sub          { max-width:680px;color:rgb(124, 4, 114); }
+
+.faq-accordion .accordion-item{
+  border:1px solid #efe7ef;
+  border-radius:12px;
+  margin-bottom:1.25rem;
+  overflow:hidden;
+  transition:box-shadow .25s ease, border-color .25s ease;
+}
+.faq-accordion .accordion-button{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.15rem;
+  font-weight:600;
+  padding:1.25rem;
+  color:#370339;
+  background-color:#fff;
+  box-shadow:none;
+}
+.faq-accordion .accordion-button::after{     /* custom “+” icon */
+  flex-shrink:0;
+  width:1.25rem;
+  height:1.25rem;
+  background-image:url("data:image/svg+xml,%3Csvg fill='currentColor' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 1a.75.75 0 0 1 .75.75v5.5h5.5a.75.75 0 0 1 0 1.5h-5.5v5.5a.75.75 0 0 1-1.5 0v-5.5h-5.5a.75.75 0 0 1 0-1.5h5.5v-5.5A.75.75 0 0 1 8 1z'/%3E%3C/svg%3E");
+  transform:none;
+}
+.faq-accordion .accordion-button:not(.collapsed)::after{ /* turn into “–” */
+  background-image:url("data:image/svg+xml,%3Csvg fill='currentColor' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 7.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 7.25z'/%3E%3C/svg%3E");
+}
+
+.faq-accordion .accordion-button:not(.collapsed){
+  background-image:linear-gradient(135deg,#f7e8f6 0%,#fdf7fc 100%);
+  border-color:#f0c4ec;
+}
+.faq-accordion .accordion-item.show,
+.faq-accordion .accordion-item:not(.collapsed) {
+  box-shadow:0 12px 40px rgba(124, 0, 128, 0.12);
+}
+.faq-accordion .accordion-body{
+  padding:0 1.25rem 1.25rem;
+  color:rgb(68, 51, 68);
+  line-height:1.6;
+}
+
+/* centre the FAQ container */
+.faq-accordion{
+  max-width: 850px;   /* tweak width if you’d like it wider/narrower */
+  margin: 0 auto;     /* ← this does the actual centring */
+}

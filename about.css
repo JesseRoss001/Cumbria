@@ -1,0 +1,842 @@
+
+/* =========================================
+   ABOUT PAGE HERO STYLES
+========================================== */
+/* Remove default margins/padding */
+#about-hero {
+  margin: 0;
+  padding: 0;
+  background-color: var(--hero-bg-color);
+}
+
+/* Top Caption & Title */
+.hero-top {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.hero-caption {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hero-title .highlight {
+  display: inline-block;
+  background-color: var(--highlight-bg);
+  color: var(--highlight-text);
+  padding: 0.2rem 0.4rem;
+  margin-left: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+/* White Card Container */
+.hero-card {
+  background-color: var(--card-bg-color);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  margin-bottom: 4rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card .row {
+  margin: 0;
+}
+
+/* Text Column */
+.hero-text .intro-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* CTA Button */
+.hero-text .btn-cta {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
+}
+
+.hero-text .btn-cta i {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.hero-text .btn-cta:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* Image Column */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   WHY TUTOR SECTION (HEIGHT-LIMITED IMAGE)
+========================================== */
+#why-tutor {
+  background-color: var(--light-bg);
+  padding-bottom: 5rem;
+}
+
+#why-tutor .section-heading {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+#why-tutor .heading-icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  display: block;
+  margin: 0 auto 0.5rem auto;
+}
+
+#why-tutor .section-heading h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+#why-tutor .section-heading p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.banner-container {
+  padding-top: 2rem;
+  position: relative;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.stats-card {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  max-width: 1000px;
+  z-index: 2;
+  color: var(--white);
+}
+
+.stat-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--white);
+}
+
+.stat-item p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  color: var(--white);
+}
+
+.stat-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* =========================================
+   OUR CORE VALUES SECTION
+========================================== */
+#core-values {
+  background-color: #FFFFFF;
+}
+
+#core-values .text-center h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+#core-values .text-center h2 .text-accent {
+  color: #7F5FFF;
+}
+
+#core-values .text-center p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#core-values .row {
+  margin-top: 2rem;
+}
+
+.value-card {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bg-purple {
+  background-color: var(--bg-purple);
+}
+
+.bg-pink {
+  background-color: var(--bg-pink);
+}
+
+.bg-green {
+  background-color: var(--bg-green);
+}
+
+.bg-yellow {
+  background-color: var(--bg-yellow);
+}
+
+.value-card .icon i {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.value-card .icon {
+  text-align: center;
+}
+
+.value-card h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.value-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 180px;
+  line-height: 1.4;
+}
+
+/* =========================================
+   QUALIFICATIONS & EDUCATION SECTION
+========================================== */
+.qualifications-section {
+  background-color: #F9FAFF;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.qual-header h2.qual-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.qual-header h2.qual-title .text-accent {
+  color: var(--accent-color);
+}
+
+.qual-header p.qual-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.qual-card,
+.qual-card-clickable {
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px var(--shadow-color-navy);
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 280px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qual-card:hover,
+.qual-card-clickable:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 45px var(--shadow-color-navy);
+}
+
+.qual-logo {
+  max-width: 120px;
+  height: auto;
+  margin: 0 auto 1rem;
+  transition: transform 0.3s ease;
+}
+
+.qual-card:hover .qual-logo,
+.qual-card-clickable:hover .qual-logo {
+  transform: scale(1.1);
+}
+
+.qual-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.qual-institution {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  color: #6C6F74;
+}
+
+.qual-card-clickable {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-view-profile {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+}
+
+.btn-view-profile:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+/* =========================================
+   TEACHING APPROACH SECTION
+========================================== */
+.teaching-section {
+  background-color: #F9FAFF;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.teach-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.teach-title .text-accent {
+  color: var(--accent-color);
+}
+
+.teach-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.teach-features li {
+  align-items: flex-start;
+}
+
+.teach-features li div {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.check-icon {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+  margin-top: 0.2rem;
+}
+
+.btn-teach-cta {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-teach-cta i {
+  margin-right: 0.5rem;
+}
+
+.btn-teach-cta:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+.teach-image-wrapper {
+  display: inline-block;
+  box-shadow: 0 8px 25px rgba(9, 9, 106, 0.15);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teach-image-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(9, 9, 106, 0.2);
+}
+
+.teach-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+/* =========================================
+   CONSOLIDATED RESPONSIVE ADJUSTMENTS
+========================================== */
+/* Tablet & Large Mobile (≤992px) */
+@media (max-width: 992px) {
+  /* ABOUT PAGE HERO */
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-title .highlight {
+    font-size: 2rem;
+  }
+  .hero-text .intro-heading {
+    font-size: 1.5rem;
+  }
+
+  /* WHY TUTOR */
+  #why-tutor .section-heading h2 {
+    font-size: 2rem;
+  }
+  #why-tutor .section-heading p {
+    font-size: 0.95rem;
+  }
+  .stat-item h3 {
+    font-size: 1.75rem;
+  }
+
+  /* CORE VALUES */
+  #core-values .text-center h2 {
+    font-size: 2rem;
+  }
+  #core-values .text-center p {
+    font-size: 0.95rem;
+  }
+  .value-card h5 {
+    font-size: 1.1rem;
+  }
+  .value-card p {
+    font-size: 0.9rem;
+    max-width: 160px;
+  }
+
+  /* QUALIFICATIONS */
+  .qual-header h2.qual-title {
+    font-size: 2.25rem;
+  }
+  .qual-header p.qual-subtitle {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .qual-card,
+  .qual-card-clickable {
+    max-width: 240px;
+    padding: 1.75rem 1.25rem;
+  }
+  .qual-logo {
+    max-width: 100px;
+  }
+  .qual-name {
+    font-size: 1rem;
+  }
+  .qual-institution {
+    font-size: 0.8rem;
+  }
+
+  /* TEACHING APPROACH */
+  .teach-title {
+    font-size: 2.5rem;
+  }
+  .teach-subtitle {
+    font-size: 1rem;
+  }
+  .teach-features li div {
+    font-size: 0.95rem;
+  }
+  .btn-teach-cta {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* TESTIMONIALS */
+  .quote {
+    font-size: 0.95rem;
+  }
+  .author {
+    font-size: 0.9rem;
+  }
+  .star-rating i {
+    font-size: 0.9rem;
+  }
+
+  /* CTA */
+  .cta-title {
+    font-size: 2.5rem;
+  }
+  .btn-cta {
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+  }
+}
+
+/* Small Tablet & Large Phone (≤768px) */
+@media (max-width: 768px) {
+  /* ABOUT PAGE HERO */
+  #about-hero {
+    padding: 2rem 1rem;
+  }
+  .hero-top {
+    padding-top: 2rem;
+  }
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero-title .highlight {
+    font-size: 1.75rem;
+  }
+  .hero-text .intro-heading {
+    font-size: 1.25rem;
+  }
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+  .hero-text .btn-cta {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* WHY TUTOR */
+  .stats-card {
+    padding: 1rem 0.5rem;
+  }
+  .stat-item {
+    border-right: none;
+    margin-bottom: 1rem;
+  }
+  .stats-card .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stat-item h3 {
+    font-size: 1.5rem;
+  }
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+
+  /* TEACHING APPROACH */
+  .teach-title {
+    font-size: 2.25rem;
+  }
+  .teach-subtitle {
+    font-size: 0.95rem;
+  }
+  .teach-features li div {
+    font-size: 0.9rem;
+  }
+  .btn-teach-cta {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.25rem;
+  }
+
+  /* CTA */
+  .cta-title {
+    font-size: 2.25rem;
+  }
+  .btn-cta {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.75rem;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  /* ABOUT PAGE HERO */
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-title .highlight {
+    font-size: 1.5rem;
+  }
+  .hero-text .intro-heading {
+    font-size: 1.1rem;
+  }
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+  .hero-text .btn-cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* CORE VALUES */
+  #core-values .text-center h2 {
+    font-size: 1.75rem;
+  }
+  #core-values .text-center p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+  .value-card h5 {
+    font-size: 1rem;
+  }
+  .value-card p {
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+
+  /* QUALIFICATIONS */
+  .qual-header h2.qual-title {
+    font-size: 2rem;
+  }
+  .qual-header p.qual-subtitle {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+  .qual-card,
+  .qual-card-clickable {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+  .qual-logo {
+    max-width: 80px;
+    margin-bottom: 0.75rem;
+  }
+  .qual-name {
+    font-size: 0.95rem;
+  }
+  .qual-institution {
+    font-size: 0.75rem;
+  }
+  .btn-view-profile {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  /* TEACHING APPROACH */
+  .teach-title {
+    font-size: 2rem;
+  }
+  .teach-subtitle {
+    font-size: 0.9rem;
+  }
+  .teach-features li div {
+    font-size: 0.85rem;
+  }
+  .btn-teach-cta {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* TESTIMONIALS */
+  .quote {
+    font-size: 0.9rem;
+  }
+  .author {
+    font-size: 0.85rem;
+  }
+  .star-rating i {
+    font-size: 0.85rem;
+  }
+
+  /* CTA */
+  .cta-title {
+    font-size: 2rem;
+  }
+  .btn-cta {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+/* =======================================================
+   1 ▸ HERO CARD — stack & reorder on small screens
+   ======================================================= */
+@media (max-width: 991.98px){           /* md-down */
+  .hero-card .row{
+    flex-direction: column-reverse;     /* ⬆ text first, image below */
+    gap: 2rem;                          /* breathing space */
+  }
+  .hero-image img{
+    max-width: 320px;                   /* stop giant portrait */
+    margin-inline: auto;                /* centre it */
+  }
+}
+
+/* =======================================================
+   2 ▸ “WHY TUTOR” BANNER + STATS
+   ======================================================= */
+@media (max-width: 991.98px){
+  /* let the purple stats card flow under the image instead
+     of overlapping (prevents odd cropping on mobiles) */
+  .stats-card{
+    position: static;
+    transform: none;
+    margin-top: 1.5rem;                 /* nice gap under banner */
+    border-radius: .75rem;              /* keep pill curve */
+  }
+  .stats-card .row{
+    flex-wrap: wrap;                    /* 2-up on tablets, 1-up on phones */
+  }
+  .stat-item{
+    flex: 0 0 50%;                      /* two per row */
+    padding-block: 1rem;
+    border-right: none !important;      /* get rid of desktop divider */
+    border-bottom: 1px solid rgba(255,255,255,.35);
+  }
+  .stat-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.35);} /* thin vertical line */
+
+  @media (max-width: 575.98px){         /* xs */
+    .stat-item{flex: 0 0 100%; border-right:none;}
+    .stat-item h3{font-size: 1.35rem;}
+  }
+}
+
+/* =======================================================
+   3 ▸ CORE VALUES — 2-up grid on tablets, 1-up on phones
+   ======================================================= */
+@media (max-width: 991.98px){
+  #core-values .row{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap:1.5rem;
+    margin-inline: auto;
+    max-width: 600px;                   /* keeps cards centred */
+  }
+}
+
+/* =======================================================
+   4 ▸ QUALIFICATION CARDS — full-width on phones
+   ======================================================= */
+@media (max-width: 575.98px){
+  .qual-card,
+  .qual-card-clickable{
+    max-width: 100%;
+  }
+}
+
+/* =======================================================
+   5 ▸ TESTIMONIAL CARDS — allow equal height & spacing
+   ======================================================= */
+@media (max-width: 991.98px){
+  #testimonials .row{
+    row-gap: 2rem;
+  }
+  .testimonial-card{
+    height: auto;                       /* stop stretch when stacked */
+  }
+}
+
+/* =======================================================
+   6 ▸ GENERAL TYPO & SPACING FINE-TUNES
+   ======================================================= */
+@media (max-width: 767.98px){
+  :root{
+    --h2-size-mobile: 1.75rem;          /* helper var */
+  }
+  /* shrink the big headings */
+  #about-hero .hero-title,
+  #why-tutor .section-heading h2,
+  #core-values h2,
+  .qual-title,
+  .teach-title,
+  .section-title{
+    font-size: var(--h2-size-mobile);
+  }
+
+  /* stop side-to-side scrolling caused by large paddings */
+  .hero-card,
+  .qualifications-section,
+  .teaching-section,
+  #core-values,
+  #testimonials{
+    padding-inline: 1rem;
+  }
+}
