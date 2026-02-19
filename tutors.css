@@ -1,0 +1,249 @@
+.hero.tutor-hero {
+  background: url('images/cta-bg.svg') center/cover no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero.tutor-hero .display-4 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.tutor-search-bar .tutor-search-input {
+  border-radius: 50px;
+  padding: 0.5rem 0.9rem;
+  background-color: #fff;
+  box-shadow: 0 8px 20px var(--shadow-color-navy);
+}
+
+.tutor-search-input input {
+  box-shadow: none;
+}
+
+.tutor-search-btn {
+  border-radius: 50px;
+  padding: 0.5rem 1.6rem;
+  font-weight: 600;
+}
+
+
+.filters .filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 50px;
+  background: #fff;
+  color: #06171f;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.filters .filter-btn i {
+  font-size: 1rem;
+}
+.filters .filter-btn:hover,
+.filters .filter-btn.active {
+  background: #06171f;
+  border-color: #06171f;
+  color: #fff;
+}
+
+
+.tutor-grid-section {
+  background-color: #fff;
+}
+
+.tutor-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 16px 40px rgba(9,9,106,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.tutor-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 46px rgba(9,9,106,0.18);
+}
+
+.tutor-card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;  
+  overflow: hidden;
+}
+
+.tutor-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tutor-card-body {
+  padding: 1.1rem 1.25rem 1.4rem;
+}
+
+.tutor-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.tutor-location {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.tutor-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+}
+
+.rating-stars {
+  color: #ffcc00;
+}
+
+.rating-text {
+  color: #666;
+}
+
+.tutor-summary {
+  font-size: 0.86rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.tutor-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tutor-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background-color: #f1f3f5;
+  color: #47515e;
+}
+
+.tutor-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.tutor-price {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.tutor-cta {
+  border-radius: 999px;
+  font-size: 0.85rem;
+  padding-inline: 1.4rem;
+}
+
+.tutor-match-box {
+  max-width: 560px;
+  padding: 2rem 1.75rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, #f2e8ff, #ffe8f5);
+  box-shadow: 0 12px 32px rgba(9, 9, 106, 0.15);
+}
+
+.tutor-match-box .btn-cta {
+  border-radius: 50px;
+  padding-inline: 1.8rem;
+}
+
+@media (max-width: 576px) {
+  .hero.tutor-hero .display-4 {
+    font-size: 1.9rem;
+  }
+
+  .tutor-card-image {
+    aspect-ratio: 1 / 1;
+  }
+
+  .tutor-card-image img {
+    height: 100%;  
+  }
+}
+
+.tutor-filter-section {
+  background: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tutor-card-body .tutor-tag {
+  display: inline-flex;          
+  align-self: flex-start;       
+  background-color: #f3e9ff;
+  color: #09096A;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tutor-match-wide {
+  background: #f8f5ff;
+  border-radius: 20px;
+}
+
+.match-box-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.08);
+}
+
+.match-image {
+  flex: 1;
+  min-height: 320px;
+}
+
+.match-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.match-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: flex-start; 
+}
+
+.tutor-match-btn {
+  background: #a611ff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  display: inline-flex;      
+  align-items: center;
+  justify-content: center;
+  width: auto !important; 
+  height: auto;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tutor-match-btn:hover {
+  background: #8b0ddb;
+}
