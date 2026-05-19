@@ -1,0 +1,19 @@
+# Cumbria Tutoring
+
+Cumbria Tutoring provides online tutor matching for families across Cumbria. The service focuses on GCSE, A-Level, SATs, KS3, primary, Maths, English and Science support.
+
+Contact: cumbria@nwttutoring.com
+Website: https://www.cumbriatutoring.com/
+
+Important routes:
+- GCSE tutors in Cumbria: /gcse-tutors-cumbria.html
+- GCSE Maths tutor in Cumbria: /gcse-maths-tutor-cumbria.html
+- GCSE English tutor in Cumbria: /gcse-english-tutor-cumbria.html
+- GCSE Science tutor in Cumbria: /gcse-science-tutor-cumbria.html
+- A-Level tutors in Cumbria: /a-level-tutors-cumbria.html
+- SATs tutor in Cumbria: /sats-tutor-cumbria.html
+- KS3 tutors in Cumbria: /ks3-tutors-cumbria.html
+- Tutors in Carlisle: /tutors-in-carlisle.html
+- Find tutors and prices: /find-tutors-cumbria-uk.html
+
+The website explains tutor subjects, levels, starting prices and the enquiry details needed to suggest a suitable tutor match.

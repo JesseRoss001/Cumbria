@@ -1,0 +1,1 @@
+Validation passed for 95 HTML pages. Public pages avoid visible phone numbers, tel links, WhatsApp preferred wording, prompt-style AI wording, internal strategy headings, old Wales leakage, £17 conflict, em dashes and broken local HTML links.

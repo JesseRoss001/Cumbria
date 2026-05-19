@@ -1,0 +1,9 @@
+{
+  "html_pages": 116,
+  "errors": [],
+  "error_count": 0,
+  "whatsapp_url_present": true,
+  "notes": [
+    "V11 fixes duplicate site.js include, portrait-safe tutor cards, mobile/tablet nav, and WhatsApp gateway."
+  ]
+}
